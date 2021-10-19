@@ -1,15 +1,19 @@
 import { Li } from './styles';
 
-export function Person() {
+interface PersonProps {
+  id: number;
+  name: string;
+  birthday: string;
+  image: string;
+}
+
+export function Person({ name, birthday, image }: PersonProps) {
   return (
     <Li>
-      <img
-        src="https://cdn.discordapp.com/avatars/394191672348508182/9fbd27cc5294358dafd28d58b72f9fb7.webp?size=128"
-        alt=""
-      />
+      <img src={image} alt="Profile" />
       <div>
-        <h2>André Tashiro</h2>
-        <p>24/06/1999</p>
+        <h3>{name}</h3>
+        <p>{birthday}</p>
       </div>
     </Li>
   );

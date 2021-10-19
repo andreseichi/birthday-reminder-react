@@ -2,6 +2,8 @@ import styled from 'styled-components';
 
 export const Li = styled.li`
   display: flex;
+  width: 14rem;
+  margin: 1rem;
 
   img {
     height: 3.5rem;
@@ -9,13 +11,13 @@ export const Li = styled.li`
   }
 
   div {
-    margin: 0 0.5rem;
+    margin-left: 0.5rem;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
 
-    h2 {
+    h3 {
       font-size: 1rem;
       font-weight: 500;
 
