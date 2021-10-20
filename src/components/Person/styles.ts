@@ -5,6 +5,12 @@ export const Li = styled.li`
   width: 14rem;
   margin: 1rem;
 
+  transition: transform 0.2s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
   img {
     height: 3.5rem;
     border-radius: 50%;
